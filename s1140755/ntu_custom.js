@@ -8,7 +8,7 @@
 var trackCall = setInterval(function () {
     if (window.jQuery) {
         clearInterval(trackCall);
-        CustomEDS();
+        //CustomEDS();
         CustomPFI();
     }
 }
@@ -21,7 +21,7 @@ var trackCall = setInterval(function () {
 
 //if (bDataCheck.indexOf("edspub") != -1) // uncomment and delete below line to run App in pfi only
 //if (bDataCheck.indexOf("edspub") == -1) // uncomment to run App in eds only
-AppNameofApp();
+//AppNameofApp();
 
 /*
 *Function to load custom eds code
@@ -31,8 +31,6 @@ function CustomEDS() {
     // used to ensure the code is run only once.
     if (jQuery('body').data('customeds') == 1) { return; }
     else { jQuery('body').attr('data-customeds', '1'); }
-
-
 
     // Execute code only in the results or resultsadvanced page 
     if ((document.location.pathname == "/eds/results") || (document.location.pathname == "/eds/resultsadvanced")) {
@@ -50,19 +48,15 @@ function CustomEDS() {
     if (document.location.pathname == "/eds/detail/detail") {
         //insert code here
         console.log('I am running from detail');
-
     }
 
     // Execute code only in the advanced record.
     if (document.location.pathname == "/eds/search/advanced") {
         //insert code here
         console.log('I am running from advanced search');
-
     }
 
-    ApplyCustomCSS();
-
-
+    //ApplyCustomCSS();
 }
 
 function CustomPFI() {
@@ -71,7 +65,11 @@ function CustomPFI() {
     if (jQuery('body').data('custompfi') == 1) { return; }
     else { jQuery('body').attr('data-custompfi', '1'); }
 
-}
+	console.log('I am running from Custom PFI');
+	//Code to insert PFI pubfinder.html text after id="toolbarControl"
+	//jQuery('#toolbarControl').after('<div><h2>NTU Library Subscribed E-Journals list</h2></div>');
+	jQuery('.find-field-wrapper').before('<div><h2>NTU Library Subscribed E-Journals list</h2></div><p>Please note: This list does not cover all NTU library\'s holdings. To view our holdings for each title, you will need to search within the sources indicated. Please also explore our print journals and databases for a comprehensive search.</p>');
+	}
 
 /*
 * Add App via JavaScript.
