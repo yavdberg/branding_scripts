@@ -1,23 +1,7 @@
-<html>
-
-<head>
-<meta http-equiv="Content-Language" content="en">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>NTU Home | NTU Library | Locate</title>
-</head>
-
-<body>
-
-<div id="tailwrap">
+<script id="custom-eds" src="http://gss.ebscohost.com/kcyew/ntu/ntu_custom.js"></script>
+<div>
 	<center>
 	<div id="bottomLinks">
-		<font face="Arial" size="1">&nbsp;</font><p><font face="Arial" size="1">&nbsp;
-		</font></p>
-		<p><font face="Arial" size="1">&nbsp; </font></p>
-		<p><font face="Arial" size="1">&nbsp;</font></p>
-		<p><font face="Arial" size="1">&nbsp; </font></p>
-		<p><font face="Arial" size="1">&nbsp;</font></p>
-		<p><font face="Arial" size="1">&nbsp; </font></p>
 		<p><font face="Arial" size="1">
 		<a target="_blank" href="http://www.ntu.edu.sg">NTU Home</a> |
 		<a target="_blank" href="http://www.ntu.edu.sg/library">NTU Library</a> 
@@ -31,12 +15,6 @@
 		Disclaimer</a> </font></div>
 	<font face="Arial" size="1"><span class="style2">© 2011 Nanyang 
 	Technological University. All rights reserved.<br>
-&nbsp;</span></font><p><span class="style2">
-	<font face="Arial" size="1">Powered 
-	by EBSCO<i>host</i></font></span></p>
-	<p>&nbsp;</p>
-	</center></div>
-
-</body>
-
-</html>
+&nbsp;</span></font><p>
+	</center>
+</div>
